@@ -1,6 +1,6 @@
 package services;
 
-public class BrazilTaxService {
+public class BrazilTaxService implements TaxService{
 
 	/*
 	 * Tax in Brazil: 

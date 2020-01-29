@@ -16,6 +16,7 @@ public class MainProgram {
 		
 		Scanner sc = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+		sc.useDelimiter("\\n");
 		
 		System.out.println("Enter rental data");
 		System.out.print("Enter car model: ");
@@ -37,10 +38,10 @@ public class MainProgram {
 		
 		System.out.println("--------------------------------");
 		System.out.println("INVOICE");
+		System.out.println("Car rent: " + model);				
 		System.out.println("Basic payment: R$ " + String.format("%.2f", car.getInvoice().getBasicPayment()));
 		System.out.println("Tax: R$ " + String.format("%.2f", car.getInvoice().getTax()));
-		System.out.println("Total Payment: R$ "+ String.format("%.2f", car.getInvoice().totalPayment()));
-		
+		System.out.println("Total Payment: R$ "+ String.format("%.2f", car.getInvoice().totalPayment()));		
 		sc.close();
 	}
 
